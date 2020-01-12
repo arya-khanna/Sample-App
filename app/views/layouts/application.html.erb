@@ -13,6 +13,7 @@
       <!--yield method inserts contents of each page into site layout-->
       <%= yield %>
       <%= render 'layouts/footer'%>
+      <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
   
