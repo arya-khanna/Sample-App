@@ -4,6 +4,7 @@
 # updated_at - datetime
 # password_digest - string
 # remember_digest - string
+# admin - boolean
 
 class User < ApplicationRecord
   attr_accessor :remember_token
