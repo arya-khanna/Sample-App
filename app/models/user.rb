@@ -6,7 +6,10 @@
 # remember_digest - string
 # admin - boolean
 
-class User < ApplicationRecord
+class User < ApplicationRecord\
+  
+  has_many :microposts
+  
   attr_accessor :remember_token
   
   before_save { self.email = email.downcase }
