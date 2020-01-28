@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails',      '6.0.1'
+gem 'active_storage_validations', '0.8.2'
 gem 'bcrypt',     '3.1.13'
 gem 'puma',       '3.12.2'
 gem 'sass-rails', '5.1.0'
