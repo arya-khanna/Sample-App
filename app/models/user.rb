@@ -6,7 +6,7 @@
 # remember_digest - string
 # admin - boolean
 
-class User < ApplicationRecord\
+class User < ApplicationRecord
   
   has_many :microposts, dependent: :destroy
   
@@ -50,4 +50,9 @@ class User < ApplicationRecord\
     update_attribute(:remember_digest, nil) 
   end 
   
+  def feed
+    Micropost.where("user_id = ?", id)
+  end 
+  
 end
+

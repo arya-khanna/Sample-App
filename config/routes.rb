@@ -19,5 +19,8 @@ Rails.application.routes.draw do
 # PATCH	/users/1	update	user_path(user)	update user
 # DELETE	/users/1	destroy	user_path(user)	delete user
   resources :users
+  
+  
+  resources :microposts,  only: [:create, :destroy]
 
 end
